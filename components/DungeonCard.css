@@ -1,0 +1,4 @@
+.border-container {
+    background-color: #baaa80 !important;
+    box-shadow: 0 0 0 3px #412624, 0 0 0 10px #8b785b, 0 0 0 15px #624e3c, 0 0 0 18px #412624, 0 3px 0 18px #00000031 !important;
+  }

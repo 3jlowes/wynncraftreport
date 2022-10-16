@@ -1,0 +1,32 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: black;
+    background: white;
+  }
+
+}
+
+.border-container {
+  background-color: #baaa80 !important;
+  box-shadow: 0 0 0 3px #412624, 0 0 0 10px #8b785b, 0 0 0 15px #624e3c, 0 0 0 18px #412624, 0 3px 0 18px #00000031 !important;
+}
