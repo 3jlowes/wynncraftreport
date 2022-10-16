@@ -4,6 +4,11 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    position: relative !important;
+    background-image: url(https://cdn.wynncraft.com/nextgen/planks-texture.webp) !important;
+    background-size: 50% !important;
+    z-index: -2 !important;
 }
 
 a {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import DungeonCard from './DungeonCard';
-import { Grid } from '@mui/material';
+import { Grid, InputAdornment } from '@mui/material';
 import { Container } from '@mui/system';
 
 function PlayerProfile({ name }) {
@@ -54,12 +54,12 @@ function PlayerProfile({ name }) {
   return (
     <div className="App">
       <h1>{name} {totalDungeons}</h1>
-      <img src={`https://visage.surgeplay.com/face/${uuid}`}/>
+      <img src={`https://visage.surgeplay.com/bust/${uuid}`}/>
       <Container>
         <Grid container rowSpacing={5} columnSpacing={5}>
           {
             stats &&
-            dungeons.map((dungeon, i) => {
+            dungeons.reverse().map((dungeon, i) => {
               return (
                 <Grid item xs={3} key={i} sx={{minWidth:280}}>
                   <DungeonCard name={dungeon} playerStats={stats} />
