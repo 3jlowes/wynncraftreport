@@ -25,7 +25,7 @@ export default function DungeonCard({ name, playerStats }) {
   let totalDungeons = totalNormalDungeons + totalCorruptDungeons
   const image = name.replace(" ", "") + ".png"
   return (
-    <Card sx={{ maxWidth: 345, height:"100%"}} className="border-container">
+    <Card sx={{maxWidth: 345, height:"100%"}} className="border-container">
       <h3>{name}</h3>
       <CardMedia
         component="img"

@@ -61,7 +61,7 @@ function PlayerProfile({ name }) {
             stats &&
             dungeons.map((dungeon, i) => {
               return (
-                <Grid item xs={3} key={i}>
+                <Grid item xs={3} key={i} sx={{minWidth:280}}>
                   <DungeonCard name={dungeon} playerStats={stats} />
                 </Grid>
               )
