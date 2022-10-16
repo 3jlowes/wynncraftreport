@@ -4,11 +4,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
     position: relative !important;
     background-image: url(https://cdn.wynncraft.com/nextgen/planks-texture.webp) !important;
     background-size: 50% !important;
-    z-index: -2 !important;
+    /* z-index: -2 !important; */
 }
 
 a {
@@ -34,4 +33,8 @@ a {
 .border-container {
   background-color: #baaa80 !important;
   box-shadow: 0 0 0 3px #412624, 0 0 0 10px #8b785b, 0 0 0 15px #624e3c, 0 0 0 18px #412624, 0 3px 0 18px #00000031 !important;
+}
+
+.myDiv {
+  background-color: white;
 }

@@ -28,31 +28,32 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <FormControl variant="standard">
-        <Input
-          onChange={getInputValue}
-          placeholder="Enter a Username"
-          id="input-with-icon-adornment"
-          startAdornment={
-            <InputAdornment position="start">
-              <Search/>
-            </InputAdornment>
-          }
-          endAdornment={
-            <InputAdornment position="end">
-              <Link href={`/profile/${userValue}`}>
-                <IconButton
-                  aria-label="toggle password visibility"
-                  edge="end"
-                  //onClick={handleSearch}
-                >
-                <SendIcon/>
-                </IconButton>
-              </Link>
-            </InputAdornment>
-          }
-        />
-      </FormControl>
+        <FormControl variant="standard">
+          <Input
+            className="myDiv"
+            onChange={getInputValue}
+            placeholder="Enter a Username"
+            id="input-with-icon-adornment"
+            startAdornment={
+              <InputAdornment position="start">
+                <Search/>
+              </InputAdornment>
+            }
+            endAdornment={
+              <InputAdornment position="end">
+                <Link href={`/profile/${userValue}`}>
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    edge="end"
+                    //onClick={handleSearch}
+                  >
+                  <SendIcon/>
+                  </IconButton>
+                </Link>
+              </InputAdornment>
+            }
+          />
+        </FormControl>
       </main>
 
       <footer className={styles.footer}>
