@@ -54,7 +54,7 @@ function PlayerProfile({ name }) {
   return (
     <div className="App">
       <h1>{name} {totalDungeons}</h1>
-      <img src={`https://visage.surgeplay.com/bust/${uuid}`}/>
+      <img src={`https://visage.surgeplay.com/face/${uuid}`}/>
       <Container>
         <Grid container rowSpacing={5} columnSpacing={5}>
           {

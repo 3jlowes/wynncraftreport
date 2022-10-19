@@ -11,12 +11,12 @@ export default function Home() {
 
   const [userValue, setUserValue] = useState("")
 
-  function handleSearch(event){
-    console.log(userValue)
-  }
-
   function getInputValue(event){
     setUserValue(event.target.value)
+  }
+
+  function handleSearch(event){
+    <meta http-equiv="refresh" content={`2;url=/profile/${userValue}`}></meta>
   }
 
   return (
@@ -34,6 +34,11 @@ export default function Home() {
             onChange={getInputValue}
             placeholder="Enter a Username"
             id="input-with-icon-adornment"
+            onKeyPress={(e) => {
+              if (e.key === 'Enter') {
+                <Link href={`/profile/${userValue}`}></Link>
+              }
+            }}
             startAdornment={
               <InputAdornment position="start">
                 <Search/>
@@ -45,7 +50,6 @@ export default function Home() {
                   <IconButton
                     aria-label="toggle password visibility"
                     edge="end"
-                    //onClick={handleSearch}
                   >
                   <SendIcon/>
                   </IconButton>
@@ -55,19 +59,6 @@ export default function Home() {
           />
         </FormControl>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
